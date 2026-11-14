@@ -46,7 +46,7 @@ For a scroll-driven product demo, use `animate-scroll-stories` to pin a preview 
 
 | Stacked workflow cards | CashCycle interactive stats |
 | --- | --- |
-| <img src="examples/live-captures/cashcycle-workflow.gif" width="285" alt="Three workflow cards take turns moving to the front of the stack"> | <img src="examples/live-captures/cashcycle-stats.gif" width="325" alt="Four stat controls switch between pointer-responsive Canvas visualizations"> |
+| <img src="examples/live-captures/cashcycle-workflow-loop.gif" width="260" alt="The workflow stack cycles from the middle card to the right card, then to the left card and back"> | <img src="examples/live-captures/cashcycle-stats-three-modes.gif" width="325" alt="Three stat controls switch between pointer-responsive Canvas visualizations"> |
 | [Stacked workflow cards skill](skills/animate-stacked-workflow-cards/SKILL.md) | [Visualization modes skill](skills/animate-visualization-modes/SKILL.md) |
 
 ### Feature card motion
