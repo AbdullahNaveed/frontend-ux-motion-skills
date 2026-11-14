@@ -2,7 +2,7 @@
 
 ![Frontend UX Motion Skills banner with three animated interface concepts](examples/banner.webp)
 
-**28 agent skills for frontend design, UX, and web animation.** Build responsive product websites with accessible CSS, SVG, Canvas, and JavaScript motion. Start with a live production example, then open the standalone HTML and JavaScript to see how the interaction works.
+**28 agent skills for frontend development, UI/UX design, and web animation.** Build responsive landing pages, card hover effects, scroll animations, logo carousels, and interactive Canvas and SVG graphics. Each skill pairs implementation guidance for coding agents with a runnable HTML, CSS, and JavaScript example.
 
 [Quick start](#quick-start) · [Choose a skill](#choose-a-skill) · [Live website examples](#live-website-examples) · [Skill directory](#skill-directory) · [License](#license)
 
@@ -29,6 +29,8 @@ Example prompt to adapt to your project.
 
 > Use the card tilt skill on our product grid. Keep existing card links, use a stationary pointer target, and verify keyboard navigation, touch, and reduced motion.
 
+For a scroll-driven product demo, use `animate-scroll-stories` to pin a preview beside the walkthrough. For a responsive light or dark landing page, start with `design-product-websites` and `build-theme-systems`.
+
 ## Choose a skill
 
 | Goal | Start here |
@@ -44,7 +46,7 @@ Example prompt to adapt to your project.
 
 | Klynd product card | CashCycle interactive stats |
 | --- | --- |
-| <img src="examples/live-captures/klynd-prop-card.gif" width="240" alt="Klynd Prop card tilts and lifts its preview on hover"> | <img src="examples/live-captures/cashcycle-stats.gif" width="540" alt="CashCycle switches between four interactive Canvas visualizations"> |
+| [<img src="examples/klynd-hover-preview.gif" width="240" alt="Klynd Prop card tilt and phone preview lift on pointer hover">](examples/live-captures/klynd-prop-card.gif) | [<img src="examples/cashcycle-canvas-preview.gif" width="540" alt="CashCycle switches between four pointer-responsive Canvas visualizations">](examples/live-captures/cashcycle-stats.gif) |
 | [Card tilt](skills/animate-card-tilt/SKILL.md) · [Pointer spotlight](skills/animate-pointer-spotlights/SKILL.md) · [Preview lift](skills/animate-product-previews/SKILL.md) | [Visualization modes](skills/animate-visualization-modes/SKILL.md) · [Reactive particles](skills/animate-canvas-particles/SKILL.md) |
 
 [Browse the full live gallery](examples/live-captures/README.md) for landing pages, pinned walkthroughs, integration carousels, and individual card loops.
@@ -115,6 +117,10 @@ For a new pattern, open an issue with what it should teach and where the existin
 **Do the examples require React or an animation library?**
 
 The examples use HTML, CSS, and browser APIs. You can adapt the interaction to the framework or motion library already in your project.
+
+**What accessibility checks do the skills cover?**
+
+The examples and audit guide cover keyboard focus, touch input, readable static states, and `prefers-reduced-motion`. Use the [frontend UX audit](skills/audit-frontend-experiences/SKILL.md) to verify those behaviors in your own implementation.
 
 **Which parts of a production example can I reuse?**
 
