@@ -44,10 +44,11 @@ For a scroll-driven product demo, use `animate-scroll-stories` to pin a preview 
 
 ## Live website examples
 
-| Stacked workflow cards | Integration diagram |
-| --- | --- |
-| ![A workflow card rises to the front of the stack on hover](examples/live-captures/cashcycle-workflow.gif) | ![Signals travel along the integration diagram’s connectors](examples/live-captures/cashcycle-integrations.gif) |
-| [Card stack skill](skills/animate-stacked-workflow-cards/SKILL.md) | [Animated connectors skill](skills/animate-integration-connectors/SKILL.md) |
+### Stacked workflow cards
+
+![A workflow card rises to the front of the stack on hover](examples/live-captures/cashcycle-workflow.gif)
+
+[Card stack skill](skills/animate-stacked-workflow-cards/SKILL.md)
 
 ### CashCycle interactive stats
 
