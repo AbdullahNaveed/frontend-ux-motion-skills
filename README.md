@@ -1,96 +1,186 @@
 # Frontend UX Motion Skills
 
-A collection of 28 agent skills for frontend design, UX, and web animation. Each skill includes implementation guidance and a standalone HTML and JavaScript example that runs without dependencies.
+**28 agent skills for frontend design, UX, and web animation.** Build responsive product websites with accessible CSS, SVG, Canvas, and JavaScript motion. Start with a live production example, then open the standalone HTML and JavaScript to see how the interaction works.
+
+[Quick start](#quick-start) · [Choose a skill](#choose-a-skill) · [Live website examples](#live-website-examples) · [Skill directory](#skill-directory) · [License](#license)
+
+## Quick start
+
+**Open a browser example locally**
+
+```bash
+git clone https://github.com/AbdullahNaveed/frontend-ux-motion-skills.git
+cd frontend-ux-motion-skills
+```
+
+Open `skills/animate-card-tilt/examples/example.html` in your browser. The demo needs no package install or build step. Read the [example JavaScript](skills/animate-card-tilt/examples/example.js) alongside the [skill instructions](skills/animate-card-tilt/SKILL.md).
+
+**Use a skill with a coding agent**
+
+Point your agent to the relevant `SKILL.md` in the checkout, or use the [Skills CLI](https://github.com/vercel-labs/skills) to install it into a supported agent such as Codex, Claude Code, or Cursor.
+
+```bash
+npx skills add AbdullahNaveed/frontend-ux-motion-skills --skill animate-card-tilt
+```
+
+Example prompt to adapt to your project.
+
+> Use the card tilt skill on our product grid. Keep existing card links, use a stationary pointer target, and verify keyboard navigation, touch, and reduced motion.
+
+## Choose a skill
+
+| Goal | Start here |
+| --- | --- |
+| Plan a product landing page from the first viewport to the final CTA | [Product website design](skills/design-product-websites/SKILL.md) |
+| Build a dark product-card grid with pointer depth and a phone preview | [Card tilt](skills/animate-card-tilt/SKILL.md), [spotlights](skills/animate-pointer-spotlights/SKILL.md), [preview lift](skills/animate-product-previews/SKILL.md) |
+| Pin a product preview while users scroll through its features | [Sticky scroll stories](skills/animate-scroll-stories/SKILL.md) |
+| Build a moving integrations carousel or logo marquee | [Seamless marquees](skills/animate-seamless-marquees/SKILL.md) |
+| Build an interactive stats canvas with selectable arrangements | [Visualization modes](skills/animate-visualization-modes/SKILL.md), [reactive particles](skills/animate-canvas-particles/SKILL.md) |
+| Check a motion-heavy landing page before release | [Frontend UX audit](skills/audit-frontend-experiences/SKILL.md), [motion lifecycle](skills/animate-frontend-interfaces/SKILL.md) |
 
 ## Live website examples
 
-These captures show the interactions on the live sites. The [live interaction guide](examples/live-captures/README.md) maps each effect to its example scripts.
+The following GIFs and PNGs were captured from [Klynd](https://klynd.trade/) and [CashCycle](https://cashcycle.ai/). The [live interaction guide](examples/live-captures/README.md) links each pattern to its reusable implementation.
 
-| [Klynd](https://klynd.trade/) | [CashCycle](https://cashcycle.ai/) |
-| --- | --- |
-| [![Screenshot of the Klynd product cards](examples/live-captures/klynd-product-cards.png)](examples/live-captures/klynd-product-cards.png) | [![Screenshot of the CashCycle feature grid](examples/live-captures/cashcycle-feature-cards.png)](examples/live-captures/cashcycle-feature-cards.png) |
+### Klynd landing pages and carousels
 
-<details>
-<summary>Klynd card animations</summary>
-
-| Journal | Prop | Academy |
-| --- | --- | --- |
-| ![Journal card tilt](examples/live-captures/klynd-journal-card.gif) | ![Prop card tilt](examples/live-captures/klynd-prop-card.gif) | ![Academy card tilt](examples/live-captures/klynd-academy-card.gif) |
-
-</details>
-
-<details>
-<summary>CashCycle card animations</summary>
-
-| Invoicing | Collections | Cash Application |
-| --- | --- | --- |
-| ![Invoicing particles](examples/live-captures/cashcycle-invoicing-card.gif) | ![Collections sequence](examples/live-captures/cashcycle-collections-card.gif) | ![Cash Application match results](examples/live-captures/cashcycle-cash-application-card.gif) |
-
-| Customer Portal | Forecasting | Analytics |
-| --- | --- | --- |
-| ![Customer Portal particle field](examples/live-captures/cashcycle-customer-portal-card.gif) | ![Forecasting chart](examples/live-captures/cashcycle-forecasting-card.gif) | ![Analytics bars](examples/live-captures/cashcycle-analytics-card.gif) |
-
-</details>
-
-### Klynd app pages
+[![Klynd homepage with its navigation and product suite hero](examples/live-captures/klynd-home.png)](examples/live-captures/klynd-home.png)
 
 | [Journal](https://klynd.trade/journal) | [Prop](https://klynd.trade/prop) | [Academy](https://klynd.trade/academy) |
 | --- | --- | --- |
-| ![Journal pinned walkthrough](examples/live-captures/klynd-journal-story.gif) | ![Prop dashboard landing page](examples/live-captures/klynd-prop-landing.gif) | ![Academy pinned walkthrough](examples/live-captures/klynd-academy-story.gif) |
-| [Moving integrations carousel](examples/live-captures/klynd-journal-marquee.gif) | [Landing page screenshot](examples/live-captures/klynd-prop-landing.png) | [Screenshot gallery hover animation](examples/live-captures/klynd-academy-gallery.gif) |
+| [![Journal landing page with navigation, hero, and market ticker](examples/live-captures/klynd-journal-landing.png)](examples/live-captures/klynd-journal-landing.png) | [![Prop landing page with navigation, hero, and prop-firm ticker](examples/live-captures/klynd-prop-landing.png)](examples/live-captures/klynd-prop-landing.png) | [![Academy landing page with navigation and hero](examples/live-captures/klynd-academy-landing.png)](examples/live-captures/klynd-academy-landing.png) |
+| [Market ticker in motion](examples/live-captures/klynd-journal-landing.gif) | [Prop-firm ticker in motion](examples/live-captures/klynd-prop-landing.gif) | [Pinned lesson walkthrough](examples/live-captures/klynd-academy-story.gif) |
 
-### More from CashCycle
+<details>
+<summary>Watch the integrations carousel and pinned walkthroughs</summary>
+
+**Journal integrations carousel**
+
+![Journal's two integration rails moving in opposite directions](examples/live-captures/klynd-journal-integrations.gif)
+
+[Integrations screenshot](examples/live-captures/klynd-journal-integrations.png)
+
+| Journal walkthrough | Academy walkthrough |
+| --- | --- |
+| ![Journal phone stays pinned as the product screens change](examples/live-captures/klynd-journal-story.gif) | ![Academy phone stays pinned as the lesson steps advance](examples/live-captures/klynd-academy-story.gif) |
+| [Screenshot](examples/live-captures/klynd-journal-story.png) | [Screenshot](examples/live-captures/klynd-academy-story.png) |
+
+</details>
+
+<details>
+<summary>Watch the three Klynd product cards</summary>
+
+[Full product grid](examples/live-captures/klynd-product-cards.png)
+
+| Journal | Prop | Academy |
+| --- | --- | --- |
+| ![Journal card hover](examples/live-captures/klynd-journal-card.gif) | ![Prop card hover](examples/live-captures/klynd-prop-card.gif) | ![Academy card hover](examples/live-captures/klynd-academy-card.gif) |
+
+</details>
+
+### CashCycle landing page and feature cards
+
+[![CashCycle homepage with navigation, hero dashboard, and integration logos](examples/live-captures/cashcycle-home.png)](examples/live-captures/cashcycle-home.png)
+
+[Animated homepage hero and logo rail](examples/live-captures/cashcycle-home.gif) · [Full feature grid](examples/live-captures/cashcycle-feature-cards.png)
+
+<details>
+<summary>Watch all six CashCycle cards individually</summary>
+
+| Invoicing | Collections | Cash Application |
+| --- | --- | --- |
+| ![Pointer-reactive invoicing particles](examples/live-captures/cashcycle-invoicing-card.gif) | ![Collections follow-up sequence](examples/live-captures/cashcycle-collections-card.gif) | ![Cash application matching rows](examples/live-captures/cashcycle-cash-application-card.gif) |
+
+| Customer Portal | Forecasting | Analytics |
+| --- | --- | --- |
+| ![Pointer-reactive customer portal field](examples/live-captures/cashcycle-customer-portal-card.gif) | ![Interactive forecasting chart](examples/live-captures/cashcycle-forecasting-card.gif) | ![Interactive analytics bars](examples/live-captures/cashcycle-analytics-card.gif) |
+
+</details>
 
 #### Built for finance teams that move fast
 
-The four controls switch the canvas between **40+ currencies supported**, **3-layer AI matching**, **7+ languages supported**, and **Security**. The pointer also changes the artwork within each mode.
+Four controls switch the Canvas visualization between **40+ currencies**, **3-layer AI matching**, **7+ languages**, and **Security**. The pointer interacts with the artwork within each mode.
 
-![CashCycle’s four stat controls switch the animated canvas](examples/live-captures/cashcycle-stats.gif)
+![CashCycle stats controls switch the animated Canvas](examples/live-captures/cashcycle-stats.gif)
 
-[Full-resolution screenshot](examples/live-captures/cashcycle-stats.png) · [Reusable visualization mode example](skills/animate-visualization-modes/examples/example.js)
+[Stats screenshot](examples/live-captures/cashcycle-stats.png) · [Visualization mode script](skills/animate-visualization-modes/examples/example.js)
 
 | Stacked workflow cards | Integration diagram |
 | --- | --- |
-| ![Hovering changes which workflow card is emphasized](examples/live-captures/cashcycle-workflow.gif) | ![Signals travel along the integration diagram’s connectors](examples/live-captures/cashcycle-integrations.gif) |
+| ![Hover promotes a workflow card](examples/live-captures/cashcycle-workflow.gif) | ![Signals travel along the diagram's connectors](examples/live-captures/cashcycle-integrations.gif) |
 | [Screenshot](examples/live-captures/cashcycle-workflow.png) | [Screenshot](examples/live-captures/cashcycle-integrations.png) |
 
-## Use a skill
+## Skill directory
 
-Clone the repository and open a skill's `examples/example.html` in your browser. Its `examples/example.js` contains the interaction code. Point your coding agent to the skill's `SKILL.md` or copy the complete skill folder into your agent's skills directory.
+Each folder contains a `SKILL.md`, agent metadata, and a browser-ready HTML and JavaScript example. The [motion recipes](skills/animate-frontend-interfaces/references/motion-recipes.md) and [browser audit guide](skills/audit-frontend-experiences/references/browser-audit.md) provide additional implementation and verification details.
 
-For example, ask your agent to use `animate-card-tilt` to add a small pointer tilt while preserving existing links and touch behavior.
+### Product website design and UX
 
-| Skill | Run locally |
-| --- | --- |
-| [Pointer tilt](skills/animate-card-tilt/SKILL.md) | [Example](skills/animate-card-tilt/examples/example.html) |
-| [Pointer spotlight](skills/animate-pointer-spotlights/SKILL.md) | [Example](skills/animate-pointer-spotlights/examples/example.html) |
-| [Product preview lift](skills/animate-product-previews/SKILL.md) | [Example](skills/animate-product-previews/examples/example.html) |
-| [Reactive canvas particles](skills/animate-canvas-particles/SKILL.md) | [Example](skills/animate-canvas-particles/examples/example.html) |
-| [Reactive paths and nodes](skills/animate-reactive-paths/SKILL.md) | [Example](skills/animate-reactive-paths/examples/example.html) |
-| [Sticky scroll stories](skills/animate-scroll-stories/SKILL.md) | [Example](skills/animate-scroll-stories/examples/example.html) |
-| [Viewport reveals](skills/animate-viewport-reveals/SKILL.md) | [Example](skills/animate-viewport-reveals/examples/example.html) |
-| [Count-up metrics](skills/animate-count-up-metrics/SKILL.md) | [Example](skills/animate-count-up-metrics/examples/example.html) |
-| [Seamless marquees](skills/animate-seamless-marquees/SKILL.md) | [Example](skills/animate-seamless-marquees/examples/example.html) |
-| [SVG line drawing](skills/animate-svg-path-drawing/SKILL.md) | [Example](skills/animate-svg-path-drawing/examples/example.html) |
-| [Dashboard choreography](skills/animate-dashboard-sequences/SKILL.md) | [Example](skills/animate-dashboard-sequences/examples/example.html) |
-| [Ambient backgrounds](skills/animate-ambient-backgrounds/SKILL.md) | [Example](skills/animate-ambient-backgrounds/examples/example.html) |
-| [Hero media timelines](skills/animate-hero-media/SKILL.md) | [Example](skills/animate-hero-media/examples/example.html) |
-| [Disclosure and menu motion](skills/animate-disclosures-and-menus/SKILL.md) | [Example](skills/animate-disclosures-and-menus/examples/example.html) |
-| [Visualization mode changes](skills/animate-visualization-modes/SKILL.md) | [Example](skills/animate-visualization-modes/examples/example.html) |
-| [Feedback microinteractions](skills/animate-feedback-states/SKILL.md) | [Example](skills/animate-feedback-states/examples/example.html) |
-| [Reactive bar illustrations](skills/animate-reactive-bars/SKILL.md) | [Example](skills/animate-reactive-bars/examples/example.html) |
-| [Icon flips](skills/animate-icon-flips/SKILL.md) | [Example](skills/animate-icon-flips/examples/example.html) |
-| [Swipe galleries](skills/animate-swipe-galleries/SKILL.md) | [Example](skills/animate-swipe-galleries/examples/example.html) |
-| [Product website structure](skills/design-product-websites/SKILL.md) | [Example](skills/design-product-websites/examples/example.html) |
-| [Light and dark theme tokens](skills/build-theme-systems/SKILL.md) | [Example](skills/build-theme-systems/examples/example.html) |
-| [Basic frontend audit script](skills/audit-frontend-experiences/SKILL.md) | [Example](skills/audit-frontend-experiences/examples/example.html) |
-| [Motion preference and lifecycle](skills/animate-frontend-interfaces/SKILL.md) | [Example](skills/animate-frontend-interfaces/examples/example.html) |
-| [Workflow app landing pages](skills/design-workflow-app-landing/SKILL.md) | [Example](skills/design-workflow-app-landing/examples/example.html) |
-| [Learning app landing pages](skills/design-learning-app-landing/SKILL.md) | [Example](skills/design-learning-app-landing/examples/example.html) |
-| [Monitoring app landing pages](skills/design-monitoring-app-landing/SKILL.md) | [Example](skills/design-monitoring-app-landing/examples/example.html) |
-| [Stacked workflow cards](skills/animate-stacked-workflow-cards/SKILL.md) | [Example](skills/animate-stacked-workflow-cards/examples/example.html) |
-| [Animated integration connectors](skills/animate-integration-connectors/SKILL.md) | [Example](skills/animate-integration-connectors/examples/example.html) |
+| Skill | When to use it | Example |
+| --- | --- | --- |
+| [Product website structure](skills/design-product-websites/SKILL.md) | Plan product messaging, proof, routes, and calls to action. | [HTML](skills/design-product-websites/examples/example.html) · [JS](skills/design-product-websites/examples/example.js) |
+| [Workflow app landing pages](skills/design-workflow-app-landing/SKILL.md) | Demonstrate a repeatable job with sequential product screens. | [HTML](skills/design-workflow-app-landing/examples/example.html) · [JS](skills/design-workflow-app-landing/examples/example.js) |
+| [Learning app landing pages](skills/design-learning-app-landing/SKILL.md) | Show curriculum progression and an accessible sample exercise. | [HTML](skills/design-learning-app-landing/examples/example.html) · [JS](skills/design-learning-app-landing/examples/example.js) |
+| [Monitoring app landing pages](skills/design-monitoring-app-landing/SKILL.md) | Explain dashboard states, thresholds, and the next action. | [HTML](skills/design-monitoring-app-landing/examples/example.html) · [JS](skills/design-monitoring-app-landing/examples/example.js) |
+| [Light and dark theme tokens](skills/build-theme-systems/SKILL.md) | Build responsive light and dark themes with semantic color tokens. | [HTML](skills/build-theme-systems/examples/example.html) · [JS](skills/build-theme-systems/examples/example.js) |
+| [Basic frontend audit script](skills/audit-frontend-experiences/SKILL.md) | Review keyboard access, touch, contrast, overflow, and motion. | [HTML](skills/audit-frontend-experiences/examples/example.html) · [JS](skills/audit-frontend-experiences/examples/example.js) |
+
+### Cards, navigation, and interaction
+
+| Skill | When to use it | Example |
+| --- | --- | --- |
+| [Pointer tilt](skills/animate-card-tilt/SKILL.md) | Tilt a visual layer from a stationary pointer target. | [HTML](skills/animate-card-tilt/examples/example.html) · [JS](skills/animate-card-tilt/examples/example.js) |
+| [Pointer spotlight](skills/animate-pointer-spotlights/SKILL.md) | Track the pointer with a gradient confined to a card. | [HTML](skills/animate-pointer-spotlights/examples/example.html) · [JS](skills/animate-pointer-spotlights/examples/example.js) |
+| [Product preview lift](skills/animate-product-previews/SKILL.md) | Lift a clipped phone or dashboard preview on hover and focus. | [HTML](skills/animate-product-previews/examples/example.html) · [JS](skills/animate-product-previews/examples/example.js) |
+| [Stacked workflow cards](skills/animate-stacked-workflow-cards/SKILL.md) | Promote a step in an overlapping stack using stable controls. | [HTML](skills/animate-stacked-workflow-cards/examples/example.html) · [JS](skills/animate-stacked-workflow-cards/examples/example.js) |
+| [Disclosure and menu motion](skills/animate-disclosures-and-menus/SKILL.md) | Animate expandable content with predictable focus and Escape behavior. | [HTML](skills/animate-disclosures-and-menus/examples/example.html) · [JS](skills/animate-disclosures-and-menus/examples/example.js) |
+| [Feedback microinteractions](skills/animate-feedback-states/SKILL.md) | Show clear, finite motion when an action changes state. | [HTML](skills/animate-feedback-states/examples/example.html) · [JS](skills/animate-feedback-states/examples/example.js) |
+| [Icon flips](skills/animate-icon-flips/SKILL.md) | Use a two-face badge to illustrate a state change. | [HTML](skills/animate-icon-flips/examples/example.html) · [JS](skills/animate-icon-flips/examples/example.js) |
+
+### Scroll animation and carousels
+
+| Skill | When to use it | Example |
+| --- | --- | --- |
+| [Sticky scroll stories](skills/animate-scroll-stories/SKILL.md) | Pin a product screen beside a scroll-driven narrative. | [HTML](skills/animate-scroll-stories/examples/example.html) · [JS](skills/animate-scroll-stories/examples/example.js) |
+| [Viewport reveals](skills/animate-viewport-reveals/SKILL.md) | Reveal supporting visuals when a section enters view. | [HTML](skills/animate-viewport-reveals/examples/example.html) · [JS](skills/animate-viewport-reveals/examples/example.js) |
+| [Seamless marquees](skills/animate-seamless-marquees/SKILL.md) | Loop logo belts, market tickers, and integration rails with a pause control. | [HTML](skills/animate-seamless-marquees/examples/example.html) · [JS](skills/animate-seamless-marquees/examples/example.js) |
+| [Swipe galleries](skills/animate-swipe-galleries/SKILL.md) | Use native scroll snapping with explicit previous and next actions. | [HTML](skills/animate-swipe-galleries/examples/example.html) · [JS](skills/animate-swipe-galleries/examples/example.js) |
+
+### Canvas, SVG, and data visualization
+
+| Skill | When to use it | Example |
+| --- | --- | --- |
+| [Reactive canvas particles](skills/animate-canvas-particles/SKILL.md) | Draw pointer-responsive particles and restore their resting positions. | [HTML](skills/animate-canvas-particles/examples/example.html) · [JS](skills/animate-canvas-particles/examples/example.js) |
+| [Reactive paths and nodes](skills/animate-reactive-paths/SKILL.md) | Bend a decorative path around the pointer. | [HTML](skills/animate-reactive-paths/examples/example.html) · [JS](skills/animate-reactive-paths/examples/example.js) |
+| [Reactive bar illustrations](skills/animate-reactive-bars/SKILL.md) | Scale decorative bars around a stable baseline. | [HTML](skills/animate-reactive-bars/examples/example.html) · [JS](skills/animate-reactive-bars/examples/example.js) |
+| [Visualization mode changes](skills/animate-visualization-modes/SKILL.md) | Change layouts from labeled, keyboard-accessible controls. | [HTML](skills/animate-visualization-modes/examples/example.html) · [JS](skills/animate-visualization-modes/examples/example.js) |
+| [Count-up metrics](skills/animate-count-up-metrics/SKILL.md) | Animate a displayed count while exposing its final value to assistive tech. | [HTML](skills/animate-count-up-metrics/examples/example.html) · [JS](skills/animate-count-up-metrics/examples/example.js) |
+| [SVG line drawing](skills/animate-svg-path-drawing/SKILL.md) | Reveal a stroke along a normalized SVG path. | [HTML](skills/animate-svg-path-drawing/examples/example.html) · [JS](skills/animate-svg-path-drawing/examples/example.js) |
+| [Animated integration connectors](skills/animate-integration-connectors/SKILL.md) | Move signals along a diagram with visible resting connectors. | [HTML](skills/animate-integration-connectors/examples/example.html) · [JS](skills/animate-integration-connectors/examples/example.js) |
+
+### Hero motion and sequencing
+
+| Skill | When to use it | Example |
+| --- | --- | --- |
+| [Dashboard choreography](skills/animate-dashboard-sequences/SKILL.md) | Sequence dashboard rows, chips, and progress indicators. | [HTML](skills/animate-dashboard-sequences/examples/example.html) · [JS](skills/animate-dashboard-sequences/examples/example.js) |
+| [Ambient backgrounds](skills/animate-ambient-backgrounds/SKILL.md) | Animate hero lighting while keeping text legible. | [HTML](skills/animate-ambient-backgrounds/examples/example.html) · [JS](skills/animate-ambient-backgrounds/examples/example.js) |
+| [Hero media timelines](skills/animate-hero-media/SKILL.md) | Build product preview timelines with a static poster state. | [HTML](skills/animate-hero-media/examples/example.html) · [JS](skills/animate-hero-media/examples/example.js) |
+| [Motion preference and lifecycle](skills/animate-frontend-interfaces/SKILL.md) | Manage animations across reduced motion, visibility, and unmount. | [HTML](skills/animate-frontend-interfaces/examples/example.html) · [JS](skills/animate-frontend-interfaces/examples/example.js) |
+
+## Contributing
+
+For a new pattern, open an issue with what it should teach and where the existing catalog falls short. A pull request should include an agent instruction, a runnable example, and verification steps. For motion examples, test the resting state, keyboard and pointer controls where applicable, touch, and reduced motion. Use original demo content.
+
+## Frequently asked questions
+
+**Do the examples require React or an animation library?**
+
+The examples use HTML, CSS, and browser APIs. You can adapt the interaction to the framework or motion library already in your project.
+
+**Which parts of a production example can I reuse?**
+
+Use the skill instructions and standalone scripts to recreate the interaction. The screenshots and GIFs illustrate how the patterns look on the live sites. See the license for the terms that apply to the reusable files.
 
 ## License
 
-The skills and example code are source-available under the [Frontend UX Motion Skills License](LICENSE). Use them for free in personal and commercial projects, including paid client work. Keep the attribution and license notice when redistributing the materials, identify changes, and credit the original project. Selling the materials as a skill pack or another paid resource is prohibited, including modified versions. The live website captures are shown for illustration and are excluded from the license.
+The [Frontend UX Motion Skills License](LICENSE) allows free personal and commercial project use, including paid client work. Keep the attribution and license notice when redistributing the materials, identify your changes, and credit the original project. Selling the materials as a skill pack or another paid resource is prohibited, including modified versions. The live website captures are shown for illustration and are excluded from this license.
