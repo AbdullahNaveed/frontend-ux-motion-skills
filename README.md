@@ -44,12 +44,16 @@ For a scroll-driven product demo, use `animate-scroll-stories` to pin a preview 
 
 ## Live website examples
 
-| Klynd product card | CashCycle interactive stats |
+| Stacked workflow cards | Integration diagram |
 | --- | --- |
-| [<img src="examples/klynd-hover-preview.gif" width="240" alt="Klynd Prop card tilt and phone preview lift on pointer hover">](examples/live-captures/klynd-prop-card.gif) | [<img src="examples/cashcycle-canvas-preview.gif" width="540" alt="CashCycle switches between four pointer-responsive Canvas visualizations">](examples/live-captures/cashcycle-stats.gif) |
-| [Card tilt](skills/animate-card-tilt/SKILL.md) · [Pointer spotlight](skills/animate-pointer-spotlights/SKILL.md) · [Preview lift](skills/animate-product-previews/SKILL.md) | [Visualization modes](skills/animate-visualization-modes/SKILL.md) · [Reactive particles](skills/animate-canvas-particles/SKILL.md) |
+| ![A workflow card rises to the front of the stack on hover](examples/live-captures/cashcycle-workflow.gif) | ![Signals travel along the integration diagram’s connectors](examples/live-captures/cashcycle-integrations.gif) |
+| [Card stack skill](skills/animate-stacked-workflow-cards/SKILL.md) | [Animated connectors skill](skills/animate-integration-connectors/SKILL.md) |
 
-[Browse the full live gallery](examples/live-captures/README.md) for landing pages, pinned walkthroughs, integration carousels, and individual card loops.
+### Feature card motion
+
+![CashCycle’s forecasting card animates its projection on hover](examples/live-captures/cashcycle-forecasting-card.gif)
+
+[Watch all six feature cards](examples/live-captures/README.md#feature-card-motion)
 
 ## Skill directory
 
