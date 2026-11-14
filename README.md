@@ -49,11 +49,21 @@ For a scroll-driven product demo, use `animate-scroll-stories` to pin a preview 
 | ![A workflow card rises to the front of the stack on hover](examples/live-captures/cashcycle-workflow.gif) | ![Signals travel along the integration diagram’s connectors](examples/live-captures/cashcycle-integrations.gif) |
 | [Card stack skill](skills/animate-stacked-workflow-cards/SKILL.md) | [Animated connectors skill](skills/animate-integration-connectors/SKILL.md) |
 
+### CashCycle interactive stats
+
+<img src="examples/live-captures/cashcycle-stats.gif" width="540" alt="CashCycle's four stat controls switch between pointer-responsive Canvas visualizations">
+
+[Visualization modes](skills/animate-visualization-modes/SKILL.md)
+
 ### Feature card motion
 
-![CashCycle’s forecasting card animates its projection on hover](examples/live-captures/cashcycle-forecasting-card.gif)
+| Invoicing | Collections | Cash Application |
+| --- | --- | --- |
+| <img src="examples/live-captures/cashcycle-invoicing-card.gif" width="220" alt="Invoice particles react to the pointer"> | <img src="examples/live-captures/cashcycle-collections-card.gif" width="220" alt="Collections follow-up sequence animates through its stages"> | <img src="examples/live-captures/cashcycle-cash-application-card.gif" width="220" alt="Payment matching results animate in rows"> |
 
-[Watch all six feature cards](examples/live-captures/README.md#feature-card-motion)
+| Customer Portal | Forecasting | Analytics |
+| --- | --- | --- |
+| <img src="examples/live-captures/cashcycle-customer-portal-card.gif" width="220" alt="Customer portal particles react to the pointer"> | <img src="examples/live-captures/cashcycle-forecasting-card.gif" width="220" alt="Forecasting chart animates its projection on hover"> | <img src="examples/live-captures/cashcycle-analytics-card.gif" width="220" alt="Analytics bars respond to the pointer"> |
 
 ## Skill directory
 
