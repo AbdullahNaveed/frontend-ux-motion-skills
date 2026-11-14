@@ -37,7 +37,7 @@ These captures show the interactions on the live sites. The [live interaction gu
 | [Journal](https://klynd.trade/journal) | [Prop](https://klynd.trade/prop) | [Academy](https://klynd.trade/academy) |
 | --- | --- | --- |
 | ![Journal pinned walkthrough](examples/live-captures/klynd-journal-story.gif) | ![Prop dashboard landing page](examples/live-captures/klynd-prop-landing.gif) | ![Academy pinned walkthrough](examples/live-captures/klynd-academy-story.gif) |
-| [Moving integrations carousel](examples/live-captures/klynd-journal-marquee.gif) | [Landing page screenshot](examples/live-captures/klynd-prop-landing.png) | [Moving screenshot gallery](examples/live-captures/klynd-academy-gallery.gif) |
+| [Moving integrations carousel](examples/live-captures/klynd-journal-marquee.gif) | [Landing page screenshot](examples/live-captures/klynd-prop-landing.png) | [Screenshot gallery hover animation](examples/live-captures/klynd-academy-gallery.gif) |
 
 ### More from CashCycle
 
