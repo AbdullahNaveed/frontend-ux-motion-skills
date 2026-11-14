@@ -1,5 +1,7 @@
 # Frontend UX Motion Skills
 
+![Frontend UX Motion Skills banner with three animated interface concepts](examples/banner.webp)
+
 **28 agent skills for frontend design, UX, and web animation.** Build responsive product websites with accessible CSS, SVG, Canvas, and JavaScript motion. Start with a live production example, then open the standalone HTML and JavaScript to see how the interaction works.
 
 [Quick start](#quick-start) · [Choose a skill](#choose-a-skill) · [Live website examples](#live-website-examples) · [Skill directory](#skill-directory) · [License](#license)
@@ -40,75 +42,12 @@ Example prompt to adapt to your project.
 
 ## Live website examples
 
-The following GIFs and PNGs were captured from [Klynd](https://klynd.trade/) and [CashCycle](https://cashcycle.ai/). The [live interaction guide](examples/live-captures/README.md) links each pattern to its reusable implementation.
-
-### Klynd landing pages and carousels
-
-[![Klynd homepage with its navigation and product suite hero](examples/live-captures/klynd-home.png)](examples/live-captures/klynd-home.png)
-
-| [Journal](https://klynd.trade/journal) | [Prop](https://klynd.trade/prop) | [Academy](https://klynd.trade/academy) |
-| --- | --- | --- |
-| [![Journal landing page with navigation, hero, and market ticker](examples/live-captures/klynd-journal-landing.png)](examples/live-captures/klynd-journal-landing.png) | [![Prop landing page with navigation, hero, and prop-firm ticker](examples/live-captures/klynd-prop-landing.png)](examples/live-captures/klynd-prop-landing.png) | [![Academy landing page with navigation and hero](examples/live-captures/klynd-academy-landing.png)](examples/live-captures/klynd-academy-landing.png) |
-| [Market ticker in motion](examples/live-captures/klynd-journal-landing.gif) | [Prop-firm ticker in motion](examples/live-captures/klynd-prop-landing.gif) | [Pinned lesson walkthrough](examples/live-captures/klynd-academy-story.gif) |
-
-<details>
-<summary>Watch the integrations carousel and pinned walkthroughs</summary>
-
-**Journal integrations carousel**
-
-![Journal's two integration rails moving in opposite directions](examples/live-captures/klynd-journal-integrations.gif)
-
-[Integrations screenshot](examples/live-captures/klynd-journal-integrations.png)
-
-| Journal walkthrough | Academy walkthrough |
+| Klynd product card | CashCycle interactive stats |
 | --- | --- |
-| ![Journal phone stays pinned as the product screens change](examples/live-captures/klynd-journal-story.gif) | ![Academy phone stays pinned as the lesson steps advance](examples/live-captures/klynd-academy-story.gif) |
-| [Screenshot](examples/live-captures/klynd-journal-story.png) | [Screenshot](examples/live-captures/klynd-academy-story.png) |
+| <img src="examples/live-captures/klynd-prop-card.gif" width="240" alt="Klynd Prop card tilts and lifts its preview on hover"> | <img src="examples/live-captures/cashcycle-stats.gif" width="540" alt="CashCycle switches between four interactive Canvas visualizations"> |
+| [Card tilt](skills/animate-card-tilt/SKILL.md) · [Pointer spotlight](skills/animate-pointer-spotlights/SKILL.md) · [Preview lift](skills/animate-product-previews/SKILL.md) | [Visualization modes](skills/animate-visualization-modes/SKILL.md) · [Reactive particles](skills/animate-canvas-particles/SKILL.md) |
 
-</details>
-
-<details>
-<summary>Watch the three Klynd product cards</summary>
-
-[Full product grid](examples/live-captures/klynd-product-cards.png)
-
-| Journal | Prop | Academy |
-| --- | --- | --- |
-| ![Journal card hover](examples/live-captures/klynd-journal-card.gif) | ![Prop card hover](examples/live-captures/klynd-prop-card.gif) | ![Academy card hover](examples/live-captures/klynd-academy-card.gif) |
-
-</details>
-
-### CashCycle landing page and feature cards
-
-[![CashCycle homepage with navigation, hero dashboard, and integration logos](examples/live-captures/cashcycle-home.png)](examples/live-captures/cashcycle-home.png)
-
-[Animated homepage hero and logo rail](examples/live-captures/cashcycle-home.gif) · [Full feature grid](examples/live-captures/cashcycle-feature-cards.png)
-
-<details>
-<summary>Watch all six CashCycle cards individually</summary>
-
-| Invoicing | Collections | Cash Application |
-| --- | --- | --- |
-| ![Pointer-reactive invoicing particles](examples/live-captures/cashcycle-invoicing-card.gif) | ![Collections follow-up sequence](examples/live-captures/cashcycle-collections-card.gif) | ![Cash application matching rows](examples/live-captures/cashcycle-cash-application-card.gif) |
-
-| Customer Portal | Forecasting | Analytics |
-| --- | --- | --- |
-| ![Pointer-reactive customer portal field](examples/live-captures/cashcycle-customer-portal-card.gif) | ![Interactive forecasting chart](examples/live-captures/cashcycle-forecasting-card.gif) | ![Interactive analytics bars](examples/live-captures/cashcycle-analytics-card.gif) |
-
-</details>
-
-#### Built for finance teams that move fast
-
-Four controls switch the Canvas visualization between **40+ currencies**, **3-layer AI matching**, **7+ languages**, and **Security**. The pointer interacts with the artwork within each mode.
-
-![CashCycle stats controls switch the animated Canvas](examples/live-captures/cashcycle-stats.gif)
-
-[Stats screenshot](examples/live-captures/cashcycle-stats.png) · [Visualization mode script](skills/animate-visualization-modes/examples/example.js)
-
-| Stacked workflow cards | Integration diagram |
-| --- | --- |
-| ![Hover promotes a workflow card](examples/live-captures/cashcycle-workflow.gif) | ![Signals travel along the diagram's connectors](examples/live-captures/cashcycle-integrations.gif) |
-| [Screenshot](examples/live-captures/cashcycle-workflow.png) | [Screenshot](examples/live-captures/cashcycle-integrations.png) |
+[Browse the full live gallery](examples/live-captures/README.md) for landing pages, pinned walkthroughs, integration carousels, and individual card loops.
 
 ## Skill directory
 
