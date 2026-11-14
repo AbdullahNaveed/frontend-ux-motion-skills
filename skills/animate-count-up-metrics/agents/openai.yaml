@@ -1,0 +1,4 @@
+interface:
+  display_name: "Count-up metrics"
+  short_description: "Build accessible count-up metrics for websites"
+  default_prompt: "Use $animate-count-up-metrics to build animated statistics and numeric interpolation for my website."

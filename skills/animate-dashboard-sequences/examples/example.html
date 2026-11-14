@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard choreography example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.board{max-width:32rem;margin-bottom:1rem}.beat{background:#302951;padding:.6rem;border-radius:.45rem}.meter{background:#302951;height:.65rem;border-radius:.5rem}.meter span{display:block;width:75%;height:100%;background:#a99bff;border-radius:inherit;transform-origin:left}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Dashboard choreography</h1>
+    <div class="panel board"><h2>Review queue</h2><p class="beat">Draft imported</p><p class="beat">Checks complete</p><p class="beat">Two reviews assigned</p><div class="meter" aria-hidden="true"><span></span></div></div><button type="button" id="replay">Replay sequence</button>
+  </main>
+</body>
+</html>

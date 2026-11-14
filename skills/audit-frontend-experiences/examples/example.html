@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basic frontend audit script</title>
+<script defer src="example.js"></script>
+<style>
+*{box-sizing:border-box}
+body{max-width:54rem;margin:2rem auto;padding:0 1rem;font:1rem/1.55 system-ui,sans-serif}
+button{font:inherit;padding:.45rem .7rem}
+
+</style>
+</head>
+<body>
+<p>Resize the page and run the sample audit. Verify the remaining behavior manually.</p>
+<h1>Frontend audit example</h1><main><h2>Project queue</h2><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='10' fill='%23674db6'/%3E%3C/svg%3E" width="32" height="32" alt="Purple badge for the project queue"><p><a href="#notes">Read the project notes</a></p><p id="notes">The next review is tomorrow.</p></main><button type="button" id="audit">Run sample audit</button><ul id="results" aria-live="polite"></ul>
+</body>
+</html>

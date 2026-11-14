@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dashboard choreography"
+  short_description: "Build accessible dashboard choreography for websites"
+  default_prompt: "Use $animate-dashboard-sequences to build staged mock dashboards, task rows, chips, and progress bars for my website."

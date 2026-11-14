@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product preview lift"
+  short_description: "Build accessible product preview lift for websites"
+  default_prompt: "Use $animate-product-previews to build hover lifts and zoomed phone or dashboard previews for my website."

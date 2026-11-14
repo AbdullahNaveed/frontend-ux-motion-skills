@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pointer spotlight example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#spot{position:relative;isolation:isolate;max-width:33rem}#spot::before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;z-index:-1;background:radial-gradient(circle at var(--x,50%) var(--y,50%),#54478c,transparent 66%);opacity:var(--glow,.28)}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Pointer spotlight</h1>
+    <article class="panel" id="spot"><h2>Print studio</h2><a href="#contact">Studio details</a></article><p id="contact">Appointments available on weekdays.</p>
+  </main>
+</body>
+</html>

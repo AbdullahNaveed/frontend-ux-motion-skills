@@ -1,0 +1,4 @@
+interface:
+  display_name: "SVG line drawing"
+  short_description: "Build accessible svg line drawing for websites"
+  default_prompt: "Use $animate-svg-path-drawing to build progressive SVG strokes, charts, and route illustrations for my website."

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive examples of accessible product cards, pointer-reactive canvas, and feature storytelling.">
+  <title>Motion Showcase | Frontend Design Agent Skills</title>
+  <link rel="stylesheet" href="showcase.css">
+  <script defer src="showcase.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="wordmark" href="#top"><span aria-hidden="true">◈</span> Motion Showcase</a>
+      <nav aria-label="Examples"><a href="#suite">Dark cards</a><a href="#features">Light cards</a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <section id="suite" class="dark">
+      <div class="wrap">
+        <div class="intro">
+          <p class="eyebrow">Product suite example</p>
+          <h1>Studio tools in motion.</h1>
+          <p>Compare three tools for a fictional design studio. Move across a card to see the spotlight and depth shift, or open a preview with your keyboard or by tapping.</p>
+        </div>
+        <div class="grid">
+          <article class="teaser" data-motion>
+            <div class="teaser-surface">
+              <div class="teaser-head"><span class="mark" aria-hidden="true">✳</span><div><h2>Fieldnote</h2><span>Research journal</span></div></div>
+              <p>Bring observations and references into one project notebook.</p>
+              <div class="stage" aria-hidden="true"><div class="phone">
+                <div class="notch"></div><small>MONDAY / RESEARCH</small><b>Studio notes</b>
+                <div class="mini-block"><span>Field studies</span><strong>12 entries</strong><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+                <div class="mini-row"><span>●</span> Interview synthesis</div><div class="mini-row"><span>●</span> Visual references</div>
+              </div></div>
+              <details><summary>Preview Fieldnote</summary><p>A notebook groups observations by study. Tags keep references connected across projects.</p></details>
+            </div>
+          </article>
+          <article class="teaser mint" data-motion>
+            <div class="teaser-surface">
+              <div class="teaser-head"><span class="mark" aria-hidden="true">⌘</span><div><h2>Routeline</h2><span>Production planner</span></div></div>
+              <p>See what is moving through production and who owns the next step.</p>
+              <div class="stage" aria-hidden="true"><div class="phone">
+                <div class="notch"></div><small>THIS WEEK / PRODUCTION</small><b>Delivery queue</b>
+                <div class="mini-block"><span>In review</span><strong>04 projects</strong><div class="mini-meter"><i></i></div></div>
+                <div class="mini-row"><span>●</span> Wayfinding kit</div><div class="mini-row"><span>●</span> Gallery signage</div>
+              </div></div>
+              <details><summary>Preview Routeline</summary><p>A delivery queue groups work by status and shows the next review owner.</p></details>
+            </div>
+          </article>
+          <article class="teaser peach" data-motion>
+            <div class="teaser-surface">
+              <div class="teaser-head"><span class="mark" aria-hidden="true">◒</span><div><h2>Proofsheet</h2><span>Creative review</span></div></div>
+              <p>Compare directions and turn feedback into a clear decision.</p>
+              <div class="stage" aria-hidden="true"><div class="phone">
+                <div class="notch"></div><small>ROUND 02 / REVIEW</small><b>Concept board</b>
+                <div class="mini-block"><div class="mini-art"></div><span>Shape studies</span><strong>03 concepts</strong></div>
+                <div class="mini-row"><span>●</span> Ready for feedback</div>
+              </div></div>
+              <details><summary>Preview Proofsheet</summary><p>A review board keeps versions, comments, and decisions together.</p></details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="light">
+      <div class="wrap">
+        <div class="intro">
+          <p class="eyebrow">Feature grid example</p>
+          <h2>Artwork that follows your cursor.</h2>
+          <p>Move over a preview to disturb its field. The cards describe the same features at rest and on touchscreens.</p>
+        </div>
+        <div class="grid">
+          <article class="feature"><h3>Signal Map</h3><p>See clusters of activity across your workspace.</p><div class="visual dots"><canvas data-art="dots" aria-hidden="true"></canvas><span class="tag">Workspace activity</span></div></article>
+          <article class="feature"><h3>Flow Path</h3><p>Trace the route a project takes through review.</p><div class="visual path"><canvas data-art="path" aria-hidden="true"></canvas><span class="tag">Review route</span></div></article>
+          <article class="feature"><h3>Volume Trend</h3><p>Compare the volume of requests across six weeks.</p><div class="visual bars"><canvas data-art="bars" aria-hidden="true"></canvas><span class="tag">Weekly requests</span></div></article>
+        </div>
+        <section class="switcher" aria-labelledby="switcher-title">
+          <div><h3 id="switcher-title">Explore the activity field</h3><p>Choose a view to change how the same points are arranged.</p>
+          <div class="switches" role="group" aria-label="Activity field view"><button type="button" data-mode="orbit" aria-pressed="true">Orbit</button><button type="button" data-mode="fan" aria-pressed="false">Fan</button><button type="button" data-mode="grid" aria-pressed="false">Grid</button></div></div>
+          <div class="visual field"><canvas data-art="field" aria-hidden="true"></canvas><span class="tag" id="field-status" aria-live="polite">Points form rings around a shared center.</span></div>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

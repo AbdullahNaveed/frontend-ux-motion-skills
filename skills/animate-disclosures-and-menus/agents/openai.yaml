@@ -1,0 +1,4 @@
+interface:
+  display_name: "Disclosure and menu motion"
+  short_description: "Build accessible disclosure and menu motion for websites"
+  default_prompt: "Use $animate-disclosures-and-menus to build animated menus, popovers, and accordion panels for my website."

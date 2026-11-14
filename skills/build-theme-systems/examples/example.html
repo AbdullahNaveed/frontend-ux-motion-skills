@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light and dark theme tokens</title>
+<script defer src="example.js"></script>
+<style>
+*{box-sizing:border-box}
+body{max-width:54rem;margin:2rem auto;padding:0 1rem;font:1rem/1.55 system-ui,sans-serif}
+button{font:inherit;padding:.45rem .7rem}
+:root{color-scheme:light;--bg:#f5f6fc;--panel:#fff;--ink:#242630;--edge:#a1a8be;--focus:#462ba3;--link:#39269e}
+:root.dark{color-scheme:dark;--bg:#171625;--panel:#232138;--ink:#f2efff;--edge:#8d84ad;--focus:#b9a9ff;--link:#d5caff}
+body{background:var(--bg);color:var(--ink)}
+article{margin-block:1rem;padding:1rem;border:1px solid var(--edge);border-radius:.8rem;background:var(--panel)}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+</style>
+</head>
+<body>
+<p>Toggle the theme to inspect equivalent surfaces and focus states.</p>
+<h1>Theme token comparison</h1><button id="theme" type="button" aria-pressed="false">Dark preview</button><article><h2>Project board</h2><p>The label and border use semantic tokens.</p><a href="#details">View details</a></article><p id="details">Review rendering in each theme.</p>
+</body>
+</html>

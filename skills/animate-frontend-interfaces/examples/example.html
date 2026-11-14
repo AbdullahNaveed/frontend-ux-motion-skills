@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion preference and lifecycle</title>
+<script defer src="example.js"></script>
+<style>
+*{box-sizing:border-box}
+body{max-width:54rem;margin:2rem auto;padding:0 1rem;font:1rem/1.55 system-ui,sans-serif}
+button{font:inherit;padding:.45rem .7rem}
+
+</style>
+</head>
+<body>
+<p>This preview waits for input and ends on page hide or a preference change.</p>
+<h1>Motion lifecycle</h1><button type="button" id="replay">Replay indicator</button><p id="indicator" aria-hidden="true">●</p>
+</body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reactive bar illustrations"
+  short_description: "Build accessible reactive bar illustrations for websites"
+  default_prompt: "Use $animate-reactive-bars to build hover-responsive decorative histograms and bar previews for my website."

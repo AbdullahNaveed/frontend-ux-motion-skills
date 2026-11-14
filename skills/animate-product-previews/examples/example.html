@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product preview lift example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.preview{max-width:32rem}.crop{overflow:hidden;height:10rem;background:#24204b;border-radius:1rem;margin-block:1rem;padding:1rem}.device{background:#131328;border:3px solid #7770a2;border-radius:1rem;width:min(100%,14rem);margin:auto;padding:1rem;transition:transform 230ms ease-out}.sample{padding:.4rem;border-bottom:1px solid #7770a2}@media(hover:hover){.preview:hover .device{transform:translateY(-.6rem) scale(1.04)}}.preview:focus-within .device{transform:translateY(-.6rem) scale(1.04)}@media(prefers-reduced-motion:reduce){.preview .device{transform:none;transition:none}}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Product preview lift</h1>
+    <article class="panel preview"><h2>Studio queue</h2><div class="crop" aria-hidden="true"><div class="device">Review board<div class="sample">Typography · In review</div><div class="sample">Wayfinding · Approved</div></div></div><details><summary>Preview the queue</summary><p>Review jobs grouped by stage with a named owner.</p></details></article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reactive canvas particles"
+  short_description: "Build accessible reactive canvas particles for websites"
+  default_prompt: "Use $animate-canvas-particles to build pointer repulsion and dot fields for my website."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visualization mode changes"
+  short_description: "Build accessible visualization mode changes for websites"
+  default_prompt: "Use $animate-visualization-modes to build interactive graphic layouts and mode switches for my website."

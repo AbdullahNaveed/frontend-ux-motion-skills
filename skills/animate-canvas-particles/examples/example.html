@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reactive canvas particles example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#field{display:block;box-sizing:border-box;padding:0;width:min(100%,36rem);height:16rem;background:#e9e6ff}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Reactive canvas particles</h1>
+    <p>Move across the illustration to separate neighboring points.</p><canvas class="panel" id="field" aria-hidden="true"></canvas>
+  </main>
+</body>
+</html>

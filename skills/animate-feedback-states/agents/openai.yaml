@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feedback microinteractions"
+  short_description: "Build accessible feedback microinteractions for websites"
+  default_prompt: "Use $animate-feedback-states to build progress pulses, completion accents, and celebration bursts for my website."

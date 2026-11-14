@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Motion and Microinteractions"
+  short_description: "Build pointer-reactive cards and motion"
+  default_prompt: "Use $animate-frontend-interfaces to build a pointer-reactive card with touch and reduced-motion support."

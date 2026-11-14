@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Icon flips example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#flip{width:6rem;height:6rem;perspective:400px;margin-bottom:1rem}.rotor{height:100%;position:relative;transform-style:preserve-3d;transition:transform 400ms ease}.rotor span{position:absolute;inset:0;display:grid;place-items:center;border-radius:1rem;background:#653da1;font-size:2rem;backface-visibility:hidden}.rotor span+span{transform:rotateY(180deg);background:#2c6169}#flip.active .rotor{transform:rotateY(180deg)}@media(prefers-reduced-motion:reduce){.rotor{transition:none}}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Icon flips</h1>
+    <div id="flip" aria-hidden="true"><div class="rotor"><span>✳</span><span>✦</span></div></div><button id="toggle" type="button" aria-pressed="false">Show connected badge</button><p id="result" role="status">Studio badge</p>
+  </main>
+</body>
+</html>

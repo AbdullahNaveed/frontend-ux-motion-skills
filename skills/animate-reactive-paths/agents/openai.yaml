@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reactive paths and nodes"
+  short_description: "Build accessible reactive paths and nodes for websites"
+  default_prompt: "Use $animate-reactive-paths to build pointer-reactive node paths and route illustrations for my website."

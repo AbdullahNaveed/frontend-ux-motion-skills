@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Website Design"
+  short_description: "Plan product pages and interaction flows"
+  default_prompt: "Use $design-product-websites to plan and build a product-suite homepage."

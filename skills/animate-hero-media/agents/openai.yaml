@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hero media timelines"
+  short_description: "Build accessible hero media timelines for websites"
+  default_prompt: "Use $animate-hero-media to build frame-based hero animations, posters, and product videos for my website."

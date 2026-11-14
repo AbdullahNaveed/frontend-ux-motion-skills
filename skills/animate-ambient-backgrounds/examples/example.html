@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambient backgrounds example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.hero{isolation:isolate;position:relative;overflow:hidden;max-width:36rem;min-height:15rem;background:#1a1530}.aurora{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 75% 60%,#563a8a,transparent 62%);transform:scale(1.2)}.hero.running .aurora{animation:drift 8s ease-in-out infinite alternate}.hero.paused .aurora{animation-play-state:paused}@keyframes drift{to{transform:translate(-12%,8%) scale(1.35);opacity:.55}}@media(prefers-reduced-motion:reduce){.hero.running .aurora{animation:none}#pause{display:none}}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Ambient backgrounds</h1>
+    <div class="panel hero" id="hero"><div class="aurora" aria-hidden="true"></div><h2>Studio launch</h2><p>Tools for planning creative work.</p><button type="button" id="pause" aria-pressed="false">Pause background</button></div>
+  </main>
+</body>
+</html>

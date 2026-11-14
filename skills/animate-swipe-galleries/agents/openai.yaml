@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swipe galleries"
+  short_description: "Build accessible swipe galleries for websites"
+  default_prompt: "Use $animate-swipe-galleries to build horizontal scroll-snap galleries and product screenshot rails for my website."

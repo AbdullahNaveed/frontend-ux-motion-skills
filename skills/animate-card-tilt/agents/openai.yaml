@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pointer tilt"
+  short_description: "Build accessible pointer tilt for websites"
+  default_prompt: "Use $animate-card-tilt to build pointer card tilt, depth, or parallax for my website."

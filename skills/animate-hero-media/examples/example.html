@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hero media timelines example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.poster{aspect-ratio:16/6;display:flex;align-items:center;justify-content:center;gap:clamp(.25rem,2vw,1.2rem);background:#211d42;border-radius:1rem;margin-block:1rem}.poster span{border:1px solid #9088c9;border-radius:.5rem;padding:clamp(.25rem,2vw,1rem);background:#373063}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Hero media timelines</h1>
+    <div class="panel"><h2>From sketch to handoff</h2><p>Draft a layout, review the work, and share the approved design.</p><div class="poster" aria-hidden="true"><span>Draft</span><span>Review</span><span>Share</span></div><button type="button" id="play">Play preview</button></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sticky scroll stories"
+  short_description: "Build accessible sticky scroll stories for websites"
+  default_prompt: "Use $animate-scroll-stories to build sticky step previews and scroll-linked product walkthroughs for my website."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pointer spotlight"
+  short_description: "Build accessible pointer spotlight for websites"
+  default_prompt: "Use $animate-pointer-spotlights to build cursor-following gradients and card glows for my website."

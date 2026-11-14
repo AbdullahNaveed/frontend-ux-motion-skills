@@ -1,0 +1,4 @@
+interface:
+  display_name: "Icon flips"
+  short_description: "Build accessible icon flips for websites"
+  default_prompt: "Use $animate-icon-flips to build two-sided decorative integration badges and flip transitions for my website."

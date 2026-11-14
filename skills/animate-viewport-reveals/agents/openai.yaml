@@ -1,0 +1,4 @@
+interface:
+  display_name: "Viewport reveals"
+  short_description: "Build accessible viewport reveals for websites"
+  default_prompt: "Use $animate-viewport-reveals to build scroll-triggered entrances and staggered section reveals for my website."

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swipe galleries example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;max-width:34rem;margin-bottom:1rem}.gallery article{box-sizing:border-box;flex:0 0 100%;min-height:11rem;scroll-snap-align:start}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Swipe galleries</h1>
+    <div class="gallery" tabindex="0" aria-label="Design boards"><article class="panel">1. Typeface</article><article class="panel">2. Palette</article><article class="panel">3. Layout</article></div><button type="button" data-direction="-1" disabled>Previous board</button> <button type="button" data-direction="1">Next board</button>
+  </main>
+</body>
+</html>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ambient backgrounds"
+  short_description: "Build accessible ambient backgrounds for websites"
+  default_prompt: "Use $animate-ambient-backgrounds to build hero auroras, morphing blobs, and breathing backgrounds for my website."

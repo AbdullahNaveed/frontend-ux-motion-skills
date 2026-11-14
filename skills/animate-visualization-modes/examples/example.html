@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualization mode changes example</title>
+  <style>
+*{box-sizing:border-box}body{max-width:60rem;margin:2rem auto;padding:0 1rem;background:#18172d;color:#f5f2ff;font:1rem/1.55 system-ui,sans-serif}h1{line-height:1.08}a{color:#d8cdff}button{font:inherit;color:#f5f2ff;background:#392e64;padding:.55rem .8rem;border:1px solid #9a88d6;border-radius:.5rem;cursor:pointer}button:disabled{opacity:.5;cursor:default}:focus-visible{outline:3px solid #e1ceff;outline-offset:3px}.panel{padding:1.2rem;border:1px solid #666085;border-radius:1rem;background:#24223c}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+#map{position:relative;max-width:32rem;height:12rem;background:#252145;border-radius:1rem}.dot{position:absolute;width:.8rem;height:.8rem;border-radius:50%;background:#c4b7ff;transform:translate(-50%,-50%);transition:left 420ms ease,top 420ms ease}@media(prefers-reduced-motion:reduce){.dot{transition:none}}
+  </style>
+  <script defer src="example.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Visualization mode changes</h1>
+    <div role="group" aria-label="Arrangement"><button type="button" data-mode="row" aria-pressed="true">Row</button><button type="button" data-mode="circle" aria-pressed="false">Circle</button></div><p id="status" aria-live="polite">Six points in a row.</p><div id="map" aria-hidden="true"></div>
+  </main>
+</body>
+</html>

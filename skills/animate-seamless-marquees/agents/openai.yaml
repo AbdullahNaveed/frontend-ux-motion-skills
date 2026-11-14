@@ -1,0 +1,4 @@
+interface:
+  display_name: "Seamless marquees"
+  short_description: "Build accessible seamless marquees for websites"
+  default_prompt: "Use $animate-seamless-marquees to build logo belts, tickers, and infinite loop tracks for my website."

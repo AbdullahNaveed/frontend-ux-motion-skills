@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend UX and Quality Audit"
+  short_description: "Verify responsive and animated frontends"
+  default_prompt: "Use $audit-frontend-experiences to audit the homepage at desktop and mobile sizes."

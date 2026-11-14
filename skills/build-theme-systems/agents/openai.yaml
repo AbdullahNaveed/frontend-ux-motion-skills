@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Theme Systems"
+  short_description: "Build cohesive light and dark interfaces"
+  default_prompt: "Use $build-theme-systems to create a light and dark surface system for this site."
