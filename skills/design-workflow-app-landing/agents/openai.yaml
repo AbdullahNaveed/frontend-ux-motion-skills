@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow app landing pages"
+  short_description: "Build workflow app landing pages for websites"
+  default_prompt: "Use $design-workflow-app-landing to improve this website."

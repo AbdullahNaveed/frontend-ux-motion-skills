@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monitoring app landing pages"
+  short_description: "Build monitoring app landing pages for websites"
+  default_prompt: "Use $design-monitoring-app-landing to improve this website."

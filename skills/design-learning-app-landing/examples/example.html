@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learning app landing pages</title>
+<style>
+*{box-sizing:border-box}
+body{max-width:52rem;margin:2rem auto;padding:0 1rem;font:1rem/1.55 system-ui,sans-serif;background:#171629;color:#f6f2ff}
+button{font:inherit;padding:.5rem .75rem;border:1px solid #a69aee;color:inherit;background:#37315e;border-radius:.55rem;cursor:pointer;margin:.2rem}
+button[aria-pressed=true]{background:#c0afff;color:#1d1735}
+:focus-visible{outline:3px solid #f4d9ff;outline-offset:3px}
+article{border:1px solid #8177ad;background:#2b2946;padding:1rem;border-radius:1rem}
+.enhanced article:not(.active){display:none}.cards{margin-block:1rem}.primary{display:inline-block;color:#d0c4ff;margin-bottom:1rem}
+</style>
+<script defer src="example.js"></script>
+</head>
+<body>
+<main>
+<h1>Learn editorial design</h1>
+<p>Try a sample lesson before exploring the rest of the curriculum.</p>
+<a class="primary" href="#preview">Open the interactive preview</a>
+<section id="preview" aria-label="Learning app landing pages"><div class="controls" role="group" aria-label="Preview steps"><button type="button" data-step="0" aria-pressed="true">Read the brief</button><button type="button" data-step="1" aria-pressed="false">Choose a grid</button><button type="button" data-step="2" aria-pressed="false">Check your answer</button></div><div class="cards"><article data-panel="0"><h2>Read the brief</h2><p>Identify the reading order of the page.</p></article>
+<article data-panel="1"><h2>Choose a grid</h2><p>Choose a column grid that supports the reading order.</p></article>
+<article data-panel="2"><h2>Check your answer</h2><p>Answer: align related content to the same columns and reserve a wider column for the main argument.</p></article></div><p id="status" aria-live="polite"></p></section>
+</main>
+</body>
+</html>

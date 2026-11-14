@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animated integration connectors"
+  short_description: "Build animated integration connectors for websites"
+  default_prompt: "Use $animate-integration-connectors to improve this website."

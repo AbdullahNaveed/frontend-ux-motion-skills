@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning app landing pages"
+  short_description: "Build learning app landing pages for websites"
+  default_prompt: "Use $design-learning-app-landing to improve this website."

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stacked workflow cards</title>
+<style>
+*{box-sizing:border-box}
+body{max-width:52rem;margin:2rem auto;padding:0 1rem;font:1rem/1.55 system-ui,sans-serif;background:#171629;color:#f6f2ff}
+button{font:inherit;padding:.5rem .75rem;border:1px solid #a69aee;color:inherit;background:#37315e;border-radius:.55rem;cursor:pointer;margin:.2rem}
+button[aria-pressed=true]{background:#c0afff;color:#1d1735}
+:focus-visible{outline:3px solid #f4d9ff;outline-offset:3px}
+article{border:1px solid #8177ad;background:#2b2946;padding:1rem;border-radius:1rem}
+.cards{display:grid;padding:2rem 1rem;isolation:isolate}.cards article{grid-area:1/1;min-height:11rem;width:min(70%,24rem);justify-self:center;transition:transform 250ms;background:#35315e;transform:rotate(var(--angle)) translateX(var(--offset))}.cards article:first-child{--angle:-6deg;--offset:-22%}.cards article:last-child{--angle:6deg;--offset:22%}.cards .active{z-index:1;transform:translateY(-.75rem);background:#4b4683}@media(max-width:550px){.cards{display:block}.cards article{width:100%;margin-bottom:.5rem;transform:none}}@media(prefers-reduced-motion:reduce){.cards article{transition:none}}
+</style>
+<script defer src="example.js"></script>
+</head>
+<body>
+<main>
+<h1>Explore the workflow</h1>
+<p>Select a step to bring its card forward.</p>
+
+<section id="preview" aria-label="Stacked workflow cards"><div class="controls" role="group" aria-label="Preview steps"><button type="button" data-step="0" aria-pressed="true">Plan</button><button type="button" data-step="1" aria-pressed="false">Build</button><button type="button" data-step="2" aria-pressed="false">Review</button></div><div class="cards"><article data-panel="0"><h2>Plan</h2><p>Start with the inputs required for this step.</p></article>
+<article data-panel="1"><h2>Build</h2><p>Use the preview to see what changes when those inputs are organized.</p></article>
+<article data-panel="2"><h2>Review</h2><p>Review the output before handing it to the next person.</p></article></div><p id="status" aria-live="polite"></p></section>
+</main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animated integration connectors</title>
+<style>
+*{box-sizing:border-box}
+body{max-width:52rem;margin:2rem auto;padding:0 1rem;font:1rem/1.55 system-ui,sans-serif;background:#171629;color:#f6f2ff}
+button{font:inherit;padding:.5rem .75rem;border:1px solid #a69aee;color:inherit;background:#37315e;border-radius:.55rem;cursor:pointer;margin:.2rem}
+button[aria-pressed=true]{background:#c0afff;color:#1d1735}
+:focus-visible{outline:3px solid #f4d9ff;outline-offset:3px}
+article{border:1px solid #8177ad;background:#2b2946;padding:1rem;border-radius:1rem}
+svg{display:block;width:min(100%,40rem);background:#242344;border-radius:1rem;margin-block:1rem}.wire,.signal{fill:none;stroke-width:4;stroke:#756ca6}.signal{stroke:#b5f4ed;stroke-dasharray:18 480;animation:signal 3s linear infinite}circle{fill:#a69aee}.paused .signal{animation-play-state:paused}@keyframes signal{to{stroke-dashoffset:-498}}@media(prefers-reduced-motion:reduce){.signal{display:none}button{display:none}}
+</style>
+<script defer src="example.js"></script>
+</head>
+<body>
+<main>
+<h1>Workspace integrations</h1>
+<p>The inbox sends requests to the routing service, which sends work to the review queue.</p>
+
+<section id="preview" aria-label="Animated integration connectors"><svg viewBox="0 0 560 110" aria-hidden="true"><path class="wire" d="M40 55 H520"/><path class="signal" d="M40 55 H520"/><circle cx="40" cy="55" r="10"/><circle cx="280" cy="55" r="10"/><circle cx="520" cy="55" r="10"/></svg><button type="button" aria-pressed="false">Pause signals</button><ol><li>Inbox</li><li>Routing service</li><li>Review queue</li></ol></section>
+</main>
+</body>
+</html>

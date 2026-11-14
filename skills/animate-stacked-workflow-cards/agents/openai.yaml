@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stacked workflow cards"
+  short_description: "Build stacked workflow cards for websites"
+  default_prompt: "Use $animate-stacked-workflow-cards to improve this website."
