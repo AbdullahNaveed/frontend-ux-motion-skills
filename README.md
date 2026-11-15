@@ -44,6 +44,13 @@ For a scroll-driven product demo, use `animate-scroll-stories` to pin a preview 
 
 ## Live website examples
 
+| Klynd Journal scroll walkthrough | Klynd Academy card hover |
+| --- | --- |
+| <img src="examples/live-captures/klynd-journal-scroll.gif" width="488" alt="Klynd Journal product screens change as the page scrolls"> | <img src="examples/live-captures/klynd-academy-card.gif" width="137" alt="The Klynd Academy card and its phone preview respond to the pointer"> |
+| [Watch full recording](examples/live-captures/klynd-journal-scroll.mp4) · [Sticky scroll stories](skills/animate-scroll-stories/SKILL.md) | [Watch recording](examples/live-captures/klynd-academy-card.mp4) · [Card tilt](skills/animate-card-tilt/SKILL.md) |
+
+### CashCycle motion
+
 | Stacked workflow cards | CashCycle interactive stats |
 | --- | --- |
 | <img src="examples/live-captures/cashcycle-workflow-loop.gif" width="260" alt="The workflow stack cycles from the middle card to the right card, then to the left card and back"> | <img src="examples/live-captures/cashcycle-stats-three-modes.gif" width="325" alt="Three stat controls switch between pointer-responsive Canvas visualizations"> |
